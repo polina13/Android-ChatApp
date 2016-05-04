@@ -25,7 +25,7 @@ public class LoginAccountActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View view) {
         if (view == mRegisterTextView) {
-            Intent intent = new Intent(LoginAccountActivity.this, CreateAccoutActivity.class);
+            Intent intent = new Intent(LoginAccountActivity.this, CreateAccountActivity.class);
             startActivity(intent);
             finish();
         }
