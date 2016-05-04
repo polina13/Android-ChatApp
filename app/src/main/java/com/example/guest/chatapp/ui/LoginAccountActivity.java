@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -72,6 +73,8 @@ public class LoginAccountActivity extends AppCompatActivity implements View.OnCl
             public void onAuthenticated(AuthData authData) {
                 if (authData != null) {
                     String userUid = authData.getUid();
+                    String userInfo = authData.toString();
+                    Log.d(TAG, "Currently logged in: " + userInfo);
                     mSharedPreferencesEditor.putString(Constants.KEY_UID, userUid).apply();
                     Intent intent = new Intent(LoginAccountActivity.this, MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
