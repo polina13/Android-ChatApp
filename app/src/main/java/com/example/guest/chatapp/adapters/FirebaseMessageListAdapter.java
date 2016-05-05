@@ -25,26 +25,17 @@ public class FirebaseMessageListAdapter extends FirebaseRecyclerAdapter<MessageV
     @Override
     public void onBindViewHolder(MessageViewHolder holder, int position) {
         holder.bindMessage(getItem(position));
-
     }
 
     @Override
-    protected void itemAdded(Message item, String key, int position) {
-
-    }
+    protected void itemAdded(Message item, String key, int position) {}
 
     @Override
-    protected void itemChanged(Message oldItem, Message newItem, String key, int position) {
-
-    }
+    protected void itemChanged(Message oldItem, Message newItem, String key, int position) {}
 
     @Override
-    protected void itemRemoved(Message item, String key, int position) {
-
-    }
+    protected void itemRemoved(Message item, String key, int position) {}
 
     @Override
-    protected void itemMoved(Message item, String key, int oldPosition, int newPosition) {
-
-    }
+    protected void itemMoved(Message item, String key, int oldPosition, int newPosition) {}
 }

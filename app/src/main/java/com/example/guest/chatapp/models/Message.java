@@ -14,7 +14,7 @@ public class Message {
     String title;
     String message;
     String author;
-    private String pushId;
+    String pushId;
     List<String> comments = new ArrayList<>();
 
     public Message() {}
@@ -52,4 +52,9 @@ public class Message {
     public void setPushId(String pushId) {
         this.pushId = pushId;
     }
+
+    public String getAuthor() {
+        return author;
+    }
+
 }

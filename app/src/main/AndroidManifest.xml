@@ -26,7 +26,8 @@
                 android:value=".ui.MainActivity" />
         </activity>
         <activity android:name=".ui.NewMessageActivity" />
-        <activity android:name=".ui.MessageDetailActivity"></activity>
+        <activity android:name=".ui.MessageDetailActivity" />
+        <activity android:name=".ui.SavedMessageListActivity"></activity>
     </application>
 
 </manifest>

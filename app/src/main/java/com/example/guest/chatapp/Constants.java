@@ -12,4 +12,6 @@ public class Constants {
     public static final String FIREBASE_URL_USERS = FIREBASE_URL + "/" + FIREBASE_LOCATION_USERS;
 
     public static final String FIREBASE_URL_MESSAGES = FIREBASE_URL + "/messages";
+
+    public static final String FIREBASE_URL_MESSAGE_LIST = FIREBASE_URL + "/messageList";
 }

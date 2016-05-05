@@ -60,5 +60,6 @@ public class User {
     public void setMessages(List<Message> messages) {
         this.messages = messages;
     }
+
 }
 
