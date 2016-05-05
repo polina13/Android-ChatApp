@@ -14,6 +14,7 @@ public class Message {
     String title;
     String message;
     String author;
+    private String pushId;
     List<String> comments = new ArrayList<>();
 
     public Message() {}
@@ -42,5 +43,13 @@ public class Message {
 
     public void setComments(List<String> comments) {
         this.comments = comments;
+    }
+
+    public String getPushId() {
+        return pushId;
+    }
+
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
     }
 }

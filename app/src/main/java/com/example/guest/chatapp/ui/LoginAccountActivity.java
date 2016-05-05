@@ -42,6 +42,7 @@ public class LoginAccountActivity extends AppCompatActivity implements View.OnCl
         mSharedPreferencesEditor = mSharedPreferences.edit();
         mFirebaseRef = new Firebase(Constants.FIREBASE_URL);
         mPasswordLoginButton.setOnClickListener(this);
+        mRegisterTextView.setOnClickListener(this);
     }
 
     @Override
