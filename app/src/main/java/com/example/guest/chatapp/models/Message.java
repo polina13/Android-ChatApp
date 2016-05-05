@@ -1,35 +1,39 @@
 package com.example.guest.chatapp.models;
 
+import org.parceler.Parcel;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Guest on 5/5/16.
  */
+
+@Parcel
 public class Message {
-    private String title;
-    private String text;
-    private String user;
-    private List<String> comments = new ArrayList<>();
+    String title;
+    String message;
+    String author;
+    List<String> comments = new ArrayList<>();
 
     public Message() {}
 
-    public Message(String text, String title, String user) {
-        this.text = text;
+    public Message(String message, String title, String author) {
+        this.message = message;
         this.title = title;
-        this.user = user;
+        this.author = author;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getText() {
-        return text;
+    public String getMessage() {
+        return message;
     }
 
     public String getUser() {
-        return user;
+        return author;
     }
 
     public List<String> getComments() {
