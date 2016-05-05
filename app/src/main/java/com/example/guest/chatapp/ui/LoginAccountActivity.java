@@ -76,6 +76,7 @@ public class LoginAccountActivity extends AppCompatActivity implements View.OnCl
                     String userInfo = authData.toString();
                     Log.d(TAG, "Currently logged in: " + userInfo);
                     mSharedPreferencesEditor.putString(Constants.KEY_UID, userUid).apply();
+
                     Intent intent = new Intent(LoginAccountActivity.this, MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
@@ -85,6 +86,7 @@ public class LoginAccountActivity extends AppCompatActivity implements View.OnCl
 
             @Override
             public void onAuthenticationError(FirebaseError firebaseError) {
+
                 switch (firebaseError.getCode()) {
                     case FirebaseError.INVALID_EMAIL:
                     case FirebaseError.USER_DOES_NOT_EXIST:

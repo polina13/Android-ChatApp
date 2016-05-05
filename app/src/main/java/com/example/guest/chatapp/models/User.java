@@ -1,5 +1,8 @@
 package com.example.guest.chatapp.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Guest on 5/4/16.
  */
@@ -8,6 +11,8 @@ public class User {
     private String email;
     private int age;
     private String bio;
+    private String pushId;
+    private List<Message> messages = new ArrayList<>();
 
     public User() {}
 
@@ -38,6 +43,22 @@ public class User {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    public String getPushId() {
+        return pushId;
+    }
+
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
+    }
+
+    public List<Message> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(List<Message> messages) {
+        this.messages = messages;
     }
 }
 
